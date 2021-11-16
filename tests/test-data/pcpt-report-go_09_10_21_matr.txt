@@ -1,0 +1,31 @@
+Correct Trials   	112/120	105/120	109/120	326/360
+Correct Targets  	106/108	103/108	105/108	314/324
+Correct Foils    	6/12	2/12	4/12	12/36
+Target Acc Rate  	0.981	0.954	0.972	0.969
+Foil Acc Rate    	0.5	0.167	0.333	0.333
+--------------------------------------------------------
+ Report for PEBL Continuous Performance Task (PCPT)
+ Version 0.5
+ http://pebl.sf.net
+ (c) 2011 Shane T. Mueller, Ph.D.
+ PEBL Version 2.1
+ Sat Oct 09 16:33:09 2021
+ Participant Code: go_09_10_21_matr
+ Pause between blocks: 0
+--------------------------------------------------------
+Statistic        ISI:   1000	2000	4000	Pooled
+--------------------------------------------------------
+Correct Trials   	112/120	105/120	109/120	326/360
+Correct Targets  	106/108	103/108	105/108	314/324
+Correct Foils    	6/12	2/12	4/12	12/36
+Target Acc Rate  	0.981	0.954	0.972	0.969
+Foil Acc Rate    	0.5	0.167	0.333	0.333
+Commission Errors	6	10	8	24
+Ommission Errors 	2	5	3	10
+Correct RT Mean  	306.22	327.95	367.44	333.82
+Correct RT SD    	85.64	91.48	73.41	87.58
+Error RT Mean    	274	334	366	329.67
+Error RT SD      	52.34	87.16	49.85	76.82
+Sensitivity (d') 	2.085	0.714	1.484	1.438
+Bias (beta)      	0.114	0.388	0.176	0.192
+--------------------------------------------------------
