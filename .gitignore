@@ -1,3 +1,8 @@
+# Personal
+playground.R
+.*playground.R
+
+# Default R
 .Rproj.user
 .Rhistory
 .RData
