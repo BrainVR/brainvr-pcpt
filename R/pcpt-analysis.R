@@ -16,6 +16,9 @@ analyze_performance <- function(df_pcpt){
   res$target_accuracy <- sum(df_pcpt$corr[df_pcpt$should_respond])/res$n_targets
   res$foil_accuracy <- sum(df_pcpt$corr[!df_pcpt$should_respond])/res$n_foils
 
+  res$error_comission <- sum(!df_pcpt$corr[!df_pcpt$should_respond])
+  res$error_omission <-  sum(!df_pcpt$corr[df_pcpt$should_respond])
+
   ## Reaction time
   res$rt_mean <- mean(df_pcpt$rt, na.rm = TRUE)
   res$rt_sd <- sd(df_pcpt$rt, na.rm = TRUE)
