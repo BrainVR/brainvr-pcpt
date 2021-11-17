@@ -20,4 +20,3 @@ preprocess_experiment <- function(df_pcpt){
     (!df_pcpt$responded & !df_pcpt$corr)
   return(df_pcpt)
 }
-

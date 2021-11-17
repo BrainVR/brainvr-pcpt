@@ -9,6 +9,8 @@ load_experiment(folder, preprocess = TRUE)
 }
 \arguments{
 \item{folder}{Folder in which to search for the foiles.}
+
+\item{preprocess}{}
 }
 \value{
 
