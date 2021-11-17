@@ -6,7 +6,21 @@
 #' @export
 #'
 #' @examples
-analyze_performance <- function(df_pcpt){
+analyze_performance <- function(df_pcpt, by_condition = FALSE){
+  if(!by_condition) return(performance_output(df_pcpt))
+  unique_cond <- unique(df_pcpt$cond)
+
+  df_res <- data.frame()
+  for(cond in unique_cond){
+    df_test <- get_condition(df_pcpt, cond)
+    res <- performance_output(df_test)
+    res$cond <- cond
+    df_res <- rbind(df_res, res)
+  }
+  return(df_res)
+}
+
+performance_output <- function(df_pcpt){
   res <- list()
 
   res$n_trials <- nrow(df_pcpt)
@@ -34,6 +48,7 @@ analyze_performance <- function(df_pcpt){
 
   return(res)
 }
+
 
 sensitivity <- function(hit_rate, false_alarm){
   sens <- qnorm(hit_rate)-qnorm(false_alarm)

@@ -4,7 +4,7 @@
 \alias{analyze_performance}
 \title{Title}
 \usage{
-analyze_performance(df_pcpt)
+analyze_performance(df_pcpt, by_condition = FALSE)
 }
 \arguments{
 \item{df_pcpt}{preprocessed data frame with pebl data}
